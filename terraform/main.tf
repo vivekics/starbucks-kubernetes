@@ -29,6 +29,7 @@ resource "aws_security_group" "ec2_security_group" {
   }
 
   egress {
+    description = "ssh access"
     from_port   = 0
     to_port     = 0
     protocol    = -1
